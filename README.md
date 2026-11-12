@@ -29,10 +29,10 @@ pip install -r requirements.txt
 python -m src.generate_charts
 ```
 
-![Cluster distribution](assets/charts/01_cluster_distribution.png)
+![Time-series anomaly spike and root-cause detection](assets/charts/01_cluster_distribution.png)
 
-Cluster volume shows whether operational incidents are concentrated in a small set of recurring failure modes. It supports prioritisation and provides a governance checkpoint before cluster labels are used to drive automated triage or remediation investment.
+The incident-response view shows baseline log volume, HDBSCAN failure clusters and the automated alert trigger around a sudden issuer-timeout and HSM-tokenisation spike.
 
-![Embedding projection](assets/charts/02_embedding_projection.png)
+![Cluster stability and embedding projection diagnostics](assets/charts/02_embedding_projection.png)
 
-The embedding projection is an explainability diagnostic for the clustering decision. Separation supports confidence in the taxonomy; overlap signals that the representation, labels or downstream automation should be challenged before operational use.
+The two-panel diagnostic combines cluster stability by operational severity with a labelled embedding projection, while muting noise points for clearer incident review.
